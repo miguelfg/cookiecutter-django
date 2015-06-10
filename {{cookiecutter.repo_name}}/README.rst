@@ -84,7 +84,7 @@ It's time to write the code!!!
 Deployment
 ------------
 
-It is possible to deploy to Heroku or to your own server by using Dokku, an open source Heroku clone. 
+It is possible to deploy to XXXXXXXXXX or to your own server by using Dokku, an open source Heroku clone.
 
 Heroku
 ^^^^^^

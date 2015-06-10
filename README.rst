@@ -18,8 +18,6 @@ Features
 * Settings management via django-configurations_
 * Registration via django-allauth_
 * User avatars via django-avatar_
-* Procfile_ for deploying to Heroku
-* Heroku optimized requirements
 * Basic caching setup
 * Grunt build for compass and livereload
 * Basic e-mail configurations for send emails via SendGrid_
@@ -29,7 +27,6 @@ Features
 .. _django-configurations: https://github.com/jezdez/django-configurations
 .. _django-allauth: https://github.com/pennersr/django-allauth
 .. _django-avatar: https://github.com/jezdez/django-avatar/
-.. _Procfile: https://devcenter.heroku.com/articles/procfile
 .. _SendGrid: https://sendgrid.com/
 
 
