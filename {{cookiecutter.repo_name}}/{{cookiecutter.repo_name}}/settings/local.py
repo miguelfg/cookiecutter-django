@@ -6,6 +6,7 @@ Local Configurations
 - Uses console backend for emails
 - Use Django Debug Toolbar
 '''
+from __future__ import unicode_literals
 from configurations import values
 from .base import Base
 

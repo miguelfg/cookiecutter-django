@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
 # Import the AbstractUser model
 from django.contrib.auth.models import AbstractUser
 

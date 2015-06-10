@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+from __future__ import unicode_literals
+
 from django.contrib import admin
 from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 from django.contrib.auth.admin import UserAdmin as AuthUserAdmin
