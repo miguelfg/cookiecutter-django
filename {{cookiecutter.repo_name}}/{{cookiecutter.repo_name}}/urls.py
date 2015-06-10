@@ -19,7 +19,7 @@ urlpatterns = patterns('',
         name="about"),
 
     # Uncomment the next line to enable the admin:
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^a/', include(admin.site.urls)),
 
     # User management
     url(r'^users/', include("users.urls", namespace="users")),
