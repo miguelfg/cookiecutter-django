@@ -4,8 +4,9 @@
     "author_name": "Your Name",
     "email": "Your email",
     "description": "A short description of the project.",
-    "year": "2014",
     "domain_name": "example.com",
     "version": "0.1.0",
-    "now": "2014/06/15"
+    "now": "2015-04-10",
+    "release_date": "2015-04-10",
+    "year": "2015"
 }
