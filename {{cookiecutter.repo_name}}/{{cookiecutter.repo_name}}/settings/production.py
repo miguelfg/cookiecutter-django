@@ -111,12 +111,12 @@ class Production(Base):
     # CACHING
     # Only do this here because thanks to django-pylibmc-sasl and pylibmc
     # memcacheify is painful to install on windows.
-    try:
-        # See: https://github.com/rdegges/django-xxxxxx-memcacheify
-        from memcacheify import memcacheify
-        CACHES = memcacheify()
-    except ImportError:
-        CACHES = values.CacheURLValue(default="memcached://127.0.0.1:11211")
-    # END CACHING
+    # try:
+    #     # See: https://github.com/rdegges/django-xxxxxx-memcacheify
+    #     from memcacheify import memcacheify
+    #     CACHES = memcacheify()
+    # except ImportError:
+    #     CACHES = values.CacheURLValue(default="memcached://127.0.0.1:11211")
+    # # END CACHING
 
     # Your production stuff: Below this line define 3rd party libary settings
