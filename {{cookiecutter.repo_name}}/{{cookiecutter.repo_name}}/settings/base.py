@@ -25,8 +25,8 @@ class Base(Configuration):
         # Default Django apps:
         'django.contrib.auth',
         'django.contrib.sessions',
-        'django.contrib.sites',
         'django.contrib.contenttypes',
+        'django.contrib.sites',
         'django.contrib.messages',
         'django.contrib.staticfiles',
 
