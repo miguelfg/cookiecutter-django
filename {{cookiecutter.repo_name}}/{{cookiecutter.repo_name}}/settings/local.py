@@ -7,10 +7,10 @@ Local Configurations
 - Use Django Debug Toolbar
 '''
 from configurations import values
-from .common import Common
+from .base import Base
 
 
-class Local(Common):
+class Local(Base):
 
     # DEBUG
     DEBUG = values.BooleanValue(True)
@@ -18,7 +18,7 @@ class Local(Common):
     # END DEBUG
 
     # INSTALLED_APPS
-    INSTALLED_APPS = Common.INSTALLED_APPS
+    INSTALLED_APPS = Base.INSTALLED_APPS
     # END INSTALLED_APPS
 
     # Mail settings
@@ -28,7 +28,7 @@ class Local(Common):
     # End mail settings
 
     # django-debug-toolbar
-    MIDDLEWARE_CLASSES = Common.MIDDLEWARE_CLASSES + ('debug_toolbar.middleware.DebugToolbarMiddleware',)
+    MIDDLEWARE_CLASSES = Base.MIDDLEWARE_CLASSES + ('debug_toolbar.middleware.DebugToolbarMiddleware',)
     INSTALLED_APPS += ('debug_toolbar',)
 
     INTERNAL_IPS = ('127.0.0.1',)

@@ -17,17 +17,17 @@ except ImportError:
     # TODO: Fix this where even if in Dev this class is called.
     pass
 
-from .common import Common
+from .base import Base
 
 
-class Production(Common):
+class Production(Base):
 
     # This ensures that Django will be able to detect a secure connection
     # properly on Xxxxxx.
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # INSTALLED_APPS
-    INSTALLED_APPS = Common.INSTALLED_APPS
+    INSTALLED_APPS = Base.INSTALLED_APPS
     # END INSTALLED_APPS
 
     # SECRET KEY

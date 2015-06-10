@@ -18,7 +18,7 @@ from configurations import Configuration, values
 BASE_DIR = dirname(dirname(__file__))
 
 
-class Common(Configuration):
+class Base(Configuration):
 
     # APP CONFIGURATION
     DJANGO_APPS = (
