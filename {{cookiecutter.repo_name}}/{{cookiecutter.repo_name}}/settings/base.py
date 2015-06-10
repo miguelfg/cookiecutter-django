@@ -24,9 +24,9 @@ class Base(Configuration):
     DJANGO_APPS = (
         # Default Django apps:
         'django.contrib.auth',
-        'django.contrib.contenttypes',
         'django.contrib.sessions',
         'django.contrib.sites',
+        'django.contrib.contenttypes',
         'django.contrib.messages',
         'django.contrib.staticfiles',
 
@@ -36,6 +36,13 @@ class Base(Configuration):
         # Admin
         'django.contrib.admin',
     )
+
+    # Apps specific for this project go here.
+    LOCAL_APPS = (
+        'users',  # custom users app
+        # Your stuff: custom apps go here
+    )
+
     THIRD_PARTY_APPS = (
         'crispy_forms',  # Form layouts
         'avatar',  # for user avatars
@@ -44,14 +51,8 @@ class Base(Configuration):
         'allauth.socialaccount',  # registration
     )
 
-    # Apps specific for this project go here.
-    LOCAL_APPS = (
-        'users',  # custom users app
-        # Your stuff: custom apps go here
-    )
-
     # See: https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
-    INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
+    INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
     # END APP CONFIGURATION
 
     # MIDDLEWARE CONFIGURATION
