@@ -5,7 +5,7 @@ Production Configurations
 - Use djangosecure
 - Use Amazon's S3 for storing static files and uploaded media
 - Use sendgird to sendemails
-- Use MEMCACHIER on Heroku
+- Use MEMCACHIER on Xxxxxx
 '''
 from configurations import values
 
@@ -23,7 +23,7 @@ from .common import Common
 class Production(Common):
 
     # This ensures that Django will be able to detect a secure connection
-    # properly on Heroku.
+    # properly on Xxxxxx.
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # INSTALLED_APPS
@@ -112,7 +112,7 @@ class Production(Common):
     # Only do this here because thanks to django-pylibmc-sasl and pylibmc
     # memcacheify is painful to install on windows.
     try:
-        # See: https://github.com/rdegges/django-heroku-memcacheify
+        # See: https://github.com/rdegges/django-xxxxxx-memcacheify
         from memcacheify import memcacheify
         CACHES = memcacheify()
     except ImportError:

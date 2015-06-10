@@ -84,36 +84,36 @@ It's time to write the code!!!
 Deployment
 ------------
 
-It is possible to deploy to XXXXXXXXXX or to your own server by using Dokku, an open source Heroku clone.
+It is possible to deploy to Xxxxxx or to your own server by using Dokku, an open source Xxxxxx clone. 
 
-Heroku
+Xxxxxx
 ^^^^^^
 
-Run these commands to deploy the project to Heroku:
+Run these commands to deploy the project to Xxxxxx:
 
 .. code-block:: bash
 
-    heroku create --buildpack https://github.com/heroku/heroku-buildpack-python
-    heroku addons:add heroku-postgresql:dev
-    heroku addons:add pgbackups:auto-month
-    heroku addons:add sendgrid:starter
-    heroku addons:add memcachier:dev
-    heroku pg:promote DATABASE_URL
-    heroku config:set DJANGO_CONFIGURATION=Production
-    heroku config:set DJANGO_SECRET_KEY=RANDOM_SECRET_KEY_HERE
-    heroku config:set DJANGO_AWS_ACCESS_KEY_ID=YOUR_AWS_ID_HERE
-    heroku config:set DJANGO_AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY_HERE
-    heroku config:set DJANGO_AWS_STORAGE_BUCKET_NAME=YOUR_AWS_S3_BUCKET_NAME_HERE
-    git push heroku master
-    heroku run python {{cookiecutter.repo_name}}/manage.py migrate
-    heroku run python {{cookiecutter.repo_name}}/manage.py createsuperuser
-    heroku open
+    xxxxxx create --buildpack https://github.com/xxxxxx/xxxxxx-buildpack-python
+    xxxxxx addons:add xxxxxx-postgresql:dev
+    xxxxxx addons:add pgbackups:auto-month
+    xxxxxx addons:add sendgrid:starter
+    xxxxxx addons:add memcachier:dev
+    xxxxxx pg:promote DATABASE_URL
+    xxxxxx config:set DJANGO_CONFIGURATION=Production
+    xxxxxx config:set DJANGO_SECRET_KEY=RANDOM_SECRET_KEY_HERE
+    xxxxxx config:set DJANGO_AWS_ACCESS_KEY_ID=YOUR_AWS_ID_HERE
+    xxxxxx config:set DJANGO_AWS_SECRET_ACCESS_KEY=YOUR_AWS_SECRET_ACCESS_KEY_HERE
+    xxxxxx config:set DJANGO_AWS_STORAGE_BUCKET_NAME=YOUR_AWS_S3_BUCKET_NAME_HERE
+    git push xxxxxx master
+    xxxxxx run python {{cookiecutter.repo_name}}/manage.py migrate
+    xxxxxx run python {{cookiecutter.repo_name}}/manage.py createsuperuser
+    xxxxxx open
 
 Dokku
 ^^^^^
 
 You need to make sure you have a server running Dokku with at least 1GB of RAM. Backing services are
-added just like in Heroku however you must ensure you have the relevant Dokku plugins installed. 
+added just like in Xxxxxx however you must ensure you have the relevant Dokku plugins installed. 
 
 .. code-block:: bash
 

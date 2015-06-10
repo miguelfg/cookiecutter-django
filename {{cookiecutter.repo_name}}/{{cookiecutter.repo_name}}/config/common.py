@@ -117,7 +117,7 @@ class Common(Configuration):
 
     # CACHING
     # Do this here because thanks to django-pylibmc-sasl and pylibmc
-    # memcacheify (used on heroku) is painful to install on windows.
+    # memcacheify (used on XXXXXXXXXX) is painful to install on windows.
     CACHES = {
         'default': {
             'BACKEND': 'django.core.cache.backends.locmem.LocMemCache',
