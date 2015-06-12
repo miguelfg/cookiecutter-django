@@ -24,7 +24,7 @@ class Production(Base):
 
     # This ensures that Django will be able to detect a secure connection
     # properly on Xxxxxx.
-    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    # SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # INSTALLED_APPS
     INSTALLED_APPS = Base.INSTALLED_APPS
