@@ -31,7 +31,7 @@ class Production(Base):
     # END INSTALLED_APPS
 
     # SECRET KEY
-    SECRET_KEY = values.SecretValue()
+    SECRET_KEY = values.SecretValue(environ_prefix="", environ_name="SECRET_KEY")
     # END SECRET KEY
 
     # django-secure
@@ -66,9 +66,9 @@ class Production(Base):
     STATICFILES_STORAGE = DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
 
     # See: http://django-storages.readthedocs.org/en/latest/backends/amazon-S3.html#settings
-    AWS_ACCESS_KEY_ID = values.SecretValue()
-    AWS_SECRET_ACCESS_KEY = values.SecretValue()
-    AWS_STORAGE_BUCKET_NAME = values.SecretValue()
+    AWS_ACCESS_KEY_ID = values.SecretValue(environ_prefix="", environ_name="AWS_ACCESS_KEY_ID")
+    AWS_SECRET_ACCESS_KEY = values.SecretValue(environ_prefix="", environ_name="AWS_SECRET_ACCESS_KEY")
+    AWS_STORAGE_BUCKET_NAME = values.SecretValue(environ_prefix="", environ_name="AWS_STORAGE_BUCKET_NAME")
     AWS_AUTO_CREATE_BUCKET = True
     AWS_QUERYSTRING_AUTH = False
 
